@@ -1,7 +1,5 @@
-/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Tiny5&display=swap');
 
-/* CSS Variables for easy theming */
 :root {
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: 'Tiny5', sans-serif;
@@ -21,7 +19,7 @@
     --transition-speed: 0.3s;
 }
 
-/* Global Styles */
+
 * {
     font-family: var(--font-primary);
     margin: 0;
@@ -34,8 +32,8 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center; 
+    align-items: center; 
     min-height: 100vh;
     padding: 20px;
     background-color: var(--color-background);
@@ -43,18 +41,18 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 1.5rem; /* Space below header */
+    margin-bottom: 1.5rem;
 }
 
 header h3 {
-    font-size: 2rem; /* Responsive font size */
+    font-size: 2rem; 
     color: var(--color-header);
     font-family: var(--font-secondary), sans-serif;
 }
 
 article {
     text-align: center;
-    margin-bottom: 1.5rem; /* Space below instructions */
+    margin-bottom: 1.5rem; 
 }
 
 article p {
@@ -64,7 +62,6 @@ article p {
     line-height: 1.5;
 }
 
-/* Input Group Styles */
 .input-group {
     display: flex;
     flex-direction: column;
@@ -98,7 +95,6 @@ article p {
     outline: none;
 }
 
-/* Button Group Styles */
 .button-group {
     display: flex;
     gap: 0.5rem;
@@ -139,7 +135,7 @@ article p {
     background-color: var(--color-button-reverse-hover);
 }
 
-/* Hasil Styles */
+/* hasil */
 .hasil {
     width: 100%;
     max-width: 650px;
@@ -182,7 +178,7 @@ article p {
     background-color: #f9f9f9;
 }
 
-/* Info Section Styles */
+/* info */
 .info {
     width: 100%;
     max-width: 650px;
@@ -204,7 +200,7 @@ article p {
     margin-bottom: 0.75rem;
 }
 
-/* Footer Styles */
+/* footer */
 footer {
     text-align: center;
     margin-top: 1.5rem;
@@ -212,7 +208,7 @@ footer {
     font-size: 0.875rem;
 }
 
-/* Responsive Design */
+/* responsive */
 @media (max-width: 768px) {
     header h3 {
         font-size: 1.75rem;
