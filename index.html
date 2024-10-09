@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+   <header>
+       <h3>Kalkulator Konversi Suhu</h3>
+   </header>
+
+   <!-- Instruksi -->
+   <article>
+       <p>Masukkan Suhu Derajat Celcius (°C) atau Fahrenheit (°F) ke Kotak di bawah, lalu klik tombol yang sesuai untuk melakukan konversi.</p>
+   </article>
+
+   <!-- Inputan Suhu -->
+   <div class="input-group">
+       <label for="input-suhu" style="font-family: 'Tiny5', sans-serif; font-size: 25px;">Celcius (°C):</label>
+       <input type="number" id="input-suhu" placeholder="Masukkan suhu dalam °C">
+   </div>
+   <div class="button-group">
+       <button type="button" style="font-family: 'Tiny5', sans-serif; font-size: 15px;" onclick="convertToFahrenheit()">Konversi ke Fahrenheit</button>
+       <button type="button" style="font-family: 'Tiny5', sans-serif; font-size: 15px;" class="reset-button" onclick="resetForm()">Reset</button>
+       <button type="button" style="font-family: 'Tiny5', sans-serif; font-size: 15px;" class="reverse-button" onclick="reverseConversion()">Reverse (Fahrenheit ke Celcius)</button>
+   </div>
+
+   <!-- Hasil Inputan -->
+   <div class="hasil">
+       <div>
+           <label for="hasil-suhu" style="font-family: 'Tiny5', sans-serif; font-size: 25px;">Fahrenheit (°F):</label>
+           <input type="number" id="hasil-suhu" placeholder="Hasil dalam °F">
+       </div>
+       <!-- Cara Kalkulasi -->
+       <div>
+           <label for="how-to-suhu" style="font-family: 'Tiny5', sans-serif; font-size: 25px;">Cara Kalkulasi:</label>
+           <textarea id="how-to-suhu" placeholder="Proses kalkulasi akan muncul di sini" readonly></textarea>
+       </div>
+   </div>
+
+   <!-- Info Content -->
+   <section class="info">
+       <h4>Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</h4>
+       <p>Suhu <em>S</em> dalam derajat Fahrenheit (°F) sama dengan suhu <em>S</em> dalam derajat Celcius (°C) kali <strong>9/5</strong> tambah <strong>32</strong>.</p>
+       <p><strong>Formula:</strong> S(°F) = (S(°C) × 9/5) + 32</p>
+       <p>atau</p>
+       <p>S(°F) = (S(°C) × 1.8) + 32</p>
+
+       <h4>Cara Konversi Dari Fahrenheit (°F) ke Celcius (°C)</h4>
+       <p>Suhu <em>S</em> dalam derajat Celcius (°C) sama dengan suhu <em>S</em> dalam derajat Fahrenheit (°F) minus <strong>32</strong> dikali <strong>5/9</strong>.</p>
+       <p><strong>Formula:</strong> S(°C) = (S(°F) − 32) × 5/9</p>
+       <p>atau</p>
+       <p>S(°C) = (S(°F) − 32) × 0.5556</p>
+   </section>
+
+   <footer>
+       created by @meelaqis
+   </footer>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
